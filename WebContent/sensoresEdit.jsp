@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ page import="java.security.*"%>
 <%@ page import="java.math.BigInteger"%>
 
@@ -55,10 +55,24 @@
 		JSONObject sensor = (JSONObject) listaParse;
 		
 		formId = sensor.get("id").toString();
-		formMaxValue = sensor.get("maxValue").toString();
-		formMinValue = sensor.get("minValue").toString();
-		formInfo = sensor.get("info").toString();
 		
+		if(sensor.get("maxValue") == null){
+			formMaxValue = "";
+		} else {
+			formMaxValue = sensor.get("maxValue").toString();
+		}
+		
+		if(sensor.get("minValue") == null){
+			formMinValue = "";
+		} else {
+			formMinValue = sensor.get("minValue").toString();
+		}
+		
+		if(sensor.get("info") == null){
+			formInfo = "";
+		} else {
+			formInfo = sensor.get("info").toString();
+		}
 		
 		if (sensor.get("status").equals(true))
 			formStatus = true;
@@ -69,16 +83,26 @@
 	}
 	else{
 
+		String minValue = request.getParameter("minValueSub");
+		if (minValue.isEmpty())
+			minValue = "null";
+		String maxValue = request.getParameter("maxValueSub");
+		if (maxValue.isEmpty())
+			maxValue = "null";
+		
 		String infoText = request.getParameter("infoSub");
-		infoText = infoText.replace(" ", "%20");
+		if (infoText.isEmpty())
+			infoText = "null";
+		else
+			infoText = infoText.replace(" ", "%20");
 		
 		String urlstrSave = "http://localhost:8080/EcoRSSFWS/rest/sensores/save/"
 				+ request.getParameter("idSub") + "&"
-				+ request.getParameter("maxValueSub") + "&"
-				+ request.getParameter("minValueSub") + "&"
+				+ minValue + "&"
+				+ maxValue + "&"
 				+ infoText + "&"
 				+ request.getParameter("statusSub");
-		
+		System.out.println(urlstrSave);
 		try {
 			URL url = new URL(urlstrSave);
 			URLConnection fbconn = url.openConnection();

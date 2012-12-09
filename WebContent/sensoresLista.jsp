@@ -1,6 +1,6 @@
 <html>
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ page import="java.security.*"%>
 <%@ page import="java.math.BigInteger"%>
 
@@ -105,9 +105,21 @@
 					<td><%= linha.get("id") %></td>
 					<td><img src="<%= imageUrl %>" height="20" width="20"></td>
 					
+					<%	if(linha.get("minValue") == null){ %>
+					<td> - </td>
+					<%}else{ %>
 					<td><%= linha.get("minValue") %></td>
+					<%} %>
+					<%	if(linha.get("maxValue") == null){ %>
+					<td> - </td>
+					<%}else{ %>
 					<td><%= linha.get("maxValue") %></td>
+					<%} %>
+					<%	if(linha.get("info") == null){ %>
+					<td> N&atilde;o h&aacute; descri&ccedil;&atilde;o.</td>
+					<%}else{ %>
 					<td><%= linha.get("info") %></td>
+					<%} %>
 						<%if( obj == "true" ){%> 	<td><input type="button"
 						onclick="javascript: location.href='<%= nextPageURL %>';"
 						value="Editar Sensor" /></td><% }%>
@@ -120,10 +132,10 @@
 			</tbody>
 		</table>
 		<br /> 
-	<%if( obj == "true" ){ %><input type="button"
+	<%-- <%if( obj == "true" ){ %><input type="button"
 			onclick="javascript: location.href='sensoresEdit.jsp';"
 			value="Novo Sensor" style="float: right; margin-right: 15%;"><%} %>
-	
+	 --%>
 		
 	</div>
 	<!-- #main: end -->

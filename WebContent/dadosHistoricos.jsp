@@ -100,7 +100,7 @@ if(auxHist != null){
 	
 	if(endDate.getTime() > startDate.getTime()){
 		
-	
+	System.out.println(startDate.getTime() + "&" + endDate.getTime());
 	String urlstr = "http://localhost:8080/EcoRSSFWS/rest/dados/range/" + idSensor + "&" + startDate.getTime() + "&" + endDate.getTime();
 	String resposta = "0";
 	try {

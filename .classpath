@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/joao.marcelo/Downloads/hibernate-release-4.1.8.Final.zip"/>
 	<classpathentry kind="lib" path="lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="lib/c3p0-0.9.1.jar"/>
 	<classpathentry kind="lib" path="lib/cglib-2.2.jar"/>
@@ -28,10 +22,14 @@
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.4.jar"/>
 	<classpathentry kind="lib" path="lib/swarmcache-1.0RC2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/joao.marcelo/Downloads/jboss-common-client-3.2.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-annotations-2.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-core-2.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-databind-2.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Downloads/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

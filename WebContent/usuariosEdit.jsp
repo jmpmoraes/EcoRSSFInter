@@ -126,7 +126,7 @@
 		String idStr = null;
 		
 		if(request.getParameter("id") == null || request.getParameter("id") == ""){
-			idStr = "novoID";
+			idStr = "null";
 		}else{
 			idStr = request.getParameter("id");
 		}
@@ -161,7 +161,7 @@
 			BufferedReader responseWS = new BufferedReader(
 					new InputStreamReader(io_stream_serverSave, "UTF-8"));
 
-			resposta = responseWS.readLine();
+			//resposta = responseWS.readLine();
 
 		}
 
