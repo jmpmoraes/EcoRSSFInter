@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/joao.marcelo/Downloads/hibernate-release-4.1.8.Final.zip"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-testing.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="lib/infinispan-core-4.2.1.CR1.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jbosscache-core-3.2.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.16-bin.jar"/>
+	<classpathentry kind="lib" path="lib/oscache-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-0.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/swarmcache-1.0RC2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/joao.marcelo/Downloads/jboss-common-client-3.2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-annotations-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-core-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Desktop/EcoRSSFApp/lib/jackson-databind-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/joao.marcelo/Downloads/json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
