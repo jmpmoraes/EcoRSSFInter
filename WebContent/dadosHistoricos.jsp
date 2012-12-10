@@ -31,6 +31,8 @@ String auxDF = request.getParameter("dt_fim");
 String urlstrSensor = "http://localhost:8080/EcoRSSFWS/rest/sensores/list";
 String respostaSensor = "0";
 
+String idSensor = "01";
+
 try {
 	URL url = new URL(urlstrSensor);
 
@@ -94,13 +96,11 @@ if(auxHist != null){
 	
 	date = aux4+"/"+aux3+"/"+aux2;
 	
-	String idSensor = request.getParameter("optSensor");
+	idSensor = request.getParameter("optSensor");
 	
 	Date endDate = (new Date(date));
-	
 	if(endDate.getTime() > startDate.getTime()){
 		
-	System.out.println(startDate.getTime() + "&" + endDate.getTime());
 	String urlstr = "http://localhost:8080/EcoRSSFWS/rest/dados/range/" + idSensor + "&" + startDate.getTime() + "&" + endDate.getTime();
 	String resposta = "0";
 	try {
@@ -177,7 +177,7 @@ if(auxHist != null){
 				}
 			},
 			title : {
-				text : 'Grafico de Luminosidade'
+				text : 'Grafico de Luminosidade - Sensor  '  + <%= idSensor %> 
 			},
 			xAxis : {
 				type : 'datetime',

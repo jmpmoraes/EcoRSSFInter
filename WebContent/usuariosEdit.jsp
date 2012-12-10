@@ -124,12 +124,18 @@
 		}
 		
 		String idStr = null;
+		String adminStr = "false";
 		
 		if(request.getParameter("id") == null || request.getParameter("id") == ""){
 			idStr = "null";
 		}else{
 			idStr = request.getParameter("id");
 		}
+		
+		if(request.getParameter("adminSub") != null)
+			adminStr = "true";
+		
+			
 		
 		String urlstrSave = "http://localhost:8080/EcoRSSFWS/rest/usuario/save/"
 				 			
@@ -148,10 +154,11 @@
 
 				+ request.getParameter("ativoSub") + "&"
 				
-				+ request.getParameter("adminSub");
+				+ adminStr;
 
 		String resposta = "0";
-
+		System.out.println(request.getParameter("adminSub"));
+		System.out.println(urlstrSave);
 		try {
 			urlstrSave = urlstrSave.replace(" ", "%20");
 			URL url = new URL(urlstrSave);
